@@ -6,10 +6,9 @@
 
 ### What I build
 
-&nbsp;**AI Agents & LLMOps** — ReAct, `multi-step reasoning`, Lang, custom eval frameworks, frontier + self-hosted models  
-&nbsp;**Backend Architecture & System Design** — REST, gRPC, WebSockets, queue-based pipelines, decoupling at scale  
-&nbsp;**Cloud & DevOps** — Azure · AWS · GCP · CI/CD · AIOps · LLMOps · hybrid and multi-cloud  
-&nbsp;**Security & Compliance** — ZTA, ISO/IEC 27001:2022, SOC 2, MITRE ATT&CK, SIEM/SOAR, blue/red team  
+I build **AI systems around business problems**, not the other way around. And my background in `process optimization` means I design `lean first`. I understand the constraints, metrics, and ***what `actually` moves the needle***, then I engineer it properly. The result is: production-grade, measurable, actuallyused.
+On the technical side: agents that **reason across multiple steps and perform actions**, LLMOps pipelines with real observability, backend architecture `designed for scale` and `decoupling from day one`.
+I operate across the full lifecycle, from whiteboarding with stakeholders to shipping production code, and **I hold `strong opinions` on where complexity should and shouldn't live.**
 
 ### Certifications
 
