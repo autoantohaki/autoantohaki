@@ -23,6 +23,17 @@
 ![Google](https://img.shields.io/badge/Google-Advanced_Data_Analytics-4285F4?style=flat-square)
 ![ITIL 4](https://img.shields.io/badge/ITIL_4-Foundation_%26_Specialist-purple?style=flat-square)
 
+### Artificial Intelligence
+
+![Harness Construction](https://img.shields.io/badge/Harness-Construction-6e40c9?style=flat-square&logoColor=white)
+![ReAct Agents](https://img.shields.io/badge/ReAct-Agents-6e40c9?style=flat-square&logoColor=white)
+![LLMOps](https://img.shields.io/badge/LLMOps-Observability-1C3C3C?style=flat-square&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Pipelines-238636?style=flat-square&logoColor=white)
+![LLM as a Judge](https://img.shields.io/badge/LLM--as--a--Judge-Eval_Frameworks-0075ca?style=flat-square&logoColor=white)
+![Multi-step Reasoning](https://img.shields.io/badge/Multi--step-Reasoning-1f6feb?style=flat-square&logoColor=white)
+![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-FF6B6B?style=flat-square&logoColor=white)
+![Self-hosted Models](https://img.shields.io/badge/Self--hosted-Models-000000?style=flat-square&logoColor=white)
+
 ### Tech
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
