@@ -6,7 +6,7 @@
 
 ### What I build
 
-&nbsp;**AI Agents & LLMOps** — ReAct, multi-step reasoning, Lang, custom eval frameworks, frontier + self-hosted models  
+&nbsp;**AI Agents & LLMOps** — ReAct, `multi-step reasoning`, Lang, custom eval frameworks, frontier + self-hosted models  
 &nbsp;**Backend Architecture & System Design** — REST, gRPC, WebSockets, queue-based pipelines, decoupling at scale  
 &nbsp;**Cloud & DevOps** — Azure · AWS · GCP · CI/CD · AIOps · LLMOps · hybrid and multi-cloud  
 &nbsp;**Security & Compliance** — ZTA, ISO/IEC 27001:2022, SOC 2, MITRE ATT&CK, SIEM/SOAR, blue/red team  
