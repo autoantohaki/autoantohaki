@@ -4,7 +4,11 @@ The README uses native GitHub text, transparent SVG assets and paired light/dark
 
 Run `node scripts/build-profile.mjs` to regenerate the README and assets. Edit its content lists for badges and project copy. Assets are checked in so rendering does not depend on a build server.
 
-Selected work uses three native table columns, with an invisible spacer preserving readable column widths on small screens. GitHub's table scrolls horizontally on narrow devices. Category labels and website buttons use solid inverted fills; other pills remain transparent with stronger outlines. All four badge categories share one wrapping cloud.
+Selected work uses nine SVG panels per theme: three unchanged project descriptions with their existing logos, three outlined GitHub buttons and three solid website buttons. Project buttons have 6px corner radii, not pill-shaped ends. No table, dividers or card backgrounds are used inside this section.
+
+GitHub preserves `picture` sources with media queries and width/height attributes. At 1200px and above, the panels are ordered as three columns; below that, they are ordered project / GitHub / website. Both layouts reuse the same assets. The inactive layout selects a zero-sized SVG with explicit zero source dimensions. The active narrow images occupy a full line while preserving their artwork size. This works without custom CSS or JavaScript; keep the media sources before the theme source. Because both arrangements remain in the document, assistive technologies can encounter duplicate descriptive links. This is a GitHub README workaround, not the responsive component pattern to use on the actual website.
+
+Category labels use solid inverted fills; other pills remain transparent with stronger outlines. All four badge categories share one wrapping cloud.
 
 ## Existing artwork
 

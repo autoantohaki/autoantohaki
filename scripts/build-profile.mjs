@@ -18,13 +18,35 @@ const picture = (file,alt,width,height) => `<picture><source media="(prefers-col
 const pill = (label,index,prefix='pill') => picture(`${prefix}-${index}`,label,undefined,28);
 const illustration = await readFile(resolve(assets,'source/phorminx-illustration.svg'),'utf8');
 const wolf = await readFile(resolve(assets,'source/dispersal-wolves.svg'),'utf8');
-// GitHub strips CSS min-width; nonbreaking whitespace keeps table columns readable.
-const columnSpacer = `<span aria-hidden="true">${'&nbsp;'.repeat(48)}</span>`;
+const phorminx = await readFile(resolve(assets,'phorminx.svg'),'utf8');
+const impossibleG = (await readFile(resolve(assets,'impossible-g.png'))).toString('base64');
+const projects = [
+  {id:'phorminx',name:'Phorminx',website:'https://phorminx.net',github:'https://github.com/impossibleG/phorminx',lines:['Speak, write, and find the thought','again. Local dictation and meeting','transcription, powered by your','own computer.']},
+  {id:'impossible-g',name:'Impossible G',website:'https://www.impossibleg.org/',github:'https://github.com/impossibleG',lines:['AI infrastructure you can own.','Ready-made services for embeddings,','documents, speech, and inference.']},
+  {id:'dispersal-wolves',name:'Dispersal Wolves',website:'https://dispersalwolves.com/',github:'https://github.com/dispersal-wolves',lines:['Ten defensive utilities for Linux','hosts. Inspect the machine,','understand its exposure, and keep','the evidence readable.']},
+];
+const innerSvg = source => source.replace(/^[\s\S]*?<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'');
+// The source dimensions collapse the inactive layout without custom README CSS.
+await writeFile(resolve(assets,'empty.svg'),svg(0,0,''));
 for(const [theme,c] of Object.entries(themes)) {
   await writeFile(resolve(assets,`divider-${theme}.svg`),svg(840,1,`<path d="M0 .5H840" stroke="${c.line}"/>`));
   const art = illustration.replace(/<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'').replaceAll('currentColor',c.ink);
   await writeFile(resolve(assets,`header-${theme}.svg`),svg(840,200,`<title>Maurício — Leave room for the next idea.</title><g font-family="Arial,Helvetica,sans-serif"><rect x="1" y="12" width="36" height="36" fill="${c.ink}"/><text x="8" y="38" fill="${theme==='dark'?'#0d1117':'#ffffff'}" font-size="24">m.</text><text x="52" y="37" fill="${c.ink}" font-size="18">Maurício Antohaki</text><text x="0" y="108" fill="${c.ink}" font-size="43" letter-spacing="-2">Leave room for</text><text x="0" y="155" fill="${c.muted}" font-size="43" letter-spacing="-2">the next idea.</text></g><svg x="408" y="8" width="430" height="182" viewBox="0 0 560 250" fill="none" opacity=".8">${art}</svg>`));
   await writeFile(resolve(assets,`dispersal-wolves-${theme}.svg`),wolf.replace('fill="currentColor"',`fill="${c.ink}"`));
+  for(const project of projects) {
+    const mark = project.id==='phorminx'
+      ? `<svg x="14" y="12" width="28" height="28" viewBox="0 0 48 48">${innerSvg(phorminx)}</svg>`
+      : project.id==='impossible-g'
+        ? `<image x="14" y="12" width="28" height="28" href="data:image/png;base64,${impossibleG}"/>`
+        : `<svg x="10" y="14" width="36" height="24" viewBox="0 0 1471 702">${innerSvg(wolf).replaceAll('currentColor',c.ink)}</svg>`;
+    const copy = project.lines.map((line,i)=>`<text x="14" y="70" dy="${i*22}" fill="${c.ink}" font-family="Arial,Helvetica,sans-serif" font-size="13">${escape(line)}</text>`).join('');
+    await writeFile(resolve(assets,`work-${project.id}-panel-${theme}.svg`),svg(260,170,`<title>${escape(project.name)}</title><desc>${escape(project.lines.join(' '))}</desc>${mark}<text x="52" y="33" fill="${c.ink}" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600">${escape(project.name)}</text>${copy}`).replace('role="img"','role="img" preserveAspectRatio="xMinYMin meet"'));
+    for(const kind of ['github','website']) {
+      const solid=kind==='website';
+      const label=solid?'Visit website':'GitHub';
+      await writeFile(resolve(assets,`work-${project.id}-${kind}-${theme}.svg`),svg(260,solid?68:48,`<title>${escape(project.name)} — ${label}</title><rect x="14.5" y="4.5" width="231" height="35" rx="6" fill="${solid?c.ink:'none'}" stroke="${solid?c.ink:c.line}"/><g fill="${solid?(theme==='dark'?'#000000':'#ffffff'):c.ink}" font-family="Arial,Helvetica,sans-serif" font-size="13"><text x="28" y="27">${label}</text><text x="220" y="27">↗</text></g>`).replace('role="img"','role="img" preserveAspectRatio="xMinYMin meet"'));
+    }
+  }
   const makePill = async (text,name,solid=false) => {
     const width = Math.ceil(text.length*6.65+26);
     await writeFile(resolve(assets,`${name}-${theme}.svg`),svg(width,28,`<title>${escape(text)}</title><rect x=".5" y=".5" width="${width-1}" height="27" rx="13.5" fill="${solid?c.ink:'none'}" stroke="${solid?c.ink:c.line}"/><text x="13" y="18" fill="${solid?(theme==='dark'?'#000000':'#ffffff'):c.ink}" font-size="11" font-family="monospace">${escape(text)}</text>`));
@@ -35,6 +57,18 @@ for(const [theme,c] of Object.entries(themes)) {
   for(const [name,label] of [['website','Website ↗'],['github','GitHub ↗'],['portfolio','Explore the portfolio ↗']])await makePill(label,name,name!=='github');
 }
 const action = (name,url,label) => `<a href="${url}">${picture(name,label,undefined,28)}</a>`;
+const projectPart = (project,kind,layout) => {
+  const file=`work-${project.id}-${kind}`;
+  const alt=kind==='panel'?`${project.name}. ${project.lines.join(' ')}`:`${project.name} ${kind==='github'?'GitHub':'website'}`;
+  const inactive=layout==='desktop'?'(max-width: 1199px)':'(min-width: 1200px)';
+  const dimensions=layout==='desktop'?'width="32%"':`width="100%" height="${kind==='panel'?170:kind==='github'?48:68}"`;
+  const image=`<picture><source media="${inactive}" srcset="assets/empty.svg" width="0" height="0"><source media="(prefers-color-scheme: dark)" srcset="assets/${file}-dark.svg"><img src="assets/${file}-light.svg" ${dimensions} alt="${escape(alt)}"></picture>`;
+  return kind==='panel'?image:`<a href="${project[kind]}">${image}</a>`;
+};
+// Desktop: three panels, then three GitHub links, then three website links.
+// Narrow screens: each panel is followed immediately by its own two links.
+const selectedWork = ['panel','github','website'].flatMap(kind=>projects.map(p=>projectPart(p,kind,'desktop'))).join('')
+  +projects.flatMap(p=>['panel','github','website'].map(kind=>projectPart(p,kind,'mobile'))).join('');
 const readme = `${picture('header','Maurício Antohaki — Leave room for the next idea. Voice-to-text illustration reused from antohaki.tech.',840)}
 
 Leader · Architect · Polyglot
@@ -47,23 +81,7 @@ ${picture('divider','',840,1)}
 
 ### 01 / Selected work
 
-<table>
-<tr>
-<td width="33%" valign="top">${columnSpacer}<h3><img src="assets/phorminx.svg" width="28" height="28" alt="">&nbsp; Phorminx</h3></td>
-<td width="33%" valign="top">${columnSpacer}<h3><img src="assets/impossible-g.png" width="30" height="30" alt="">&nbsp; Impossible G</h3></td>
-<td width="33%" valign="top">${columnSpacer}<h3>${picture('dispersal-wolves','',42,22)}&nbsp; Dispersal Wolves</h3></td>
-</tr>
-<tr>
-<td valign="top">Speak, write, and find the thought again. Local dictation and meeting transcription, powered by your own computer.</td>
-<td valign="top">AI infrastructure you can own. Ready-made services for embeddings, documents, speech, and inference.</td>
-<td valign="top">Ten defensive utilities for Linux hosts. Inspect the machine, understand its exposure, and keep the evidence readable.</td>
-</tr>
-<tr>
-<td>${action('website','https://phorminx.net','Phorminx website')} ${action('github','https://github.com/impossibleG/phorminx','Phorminx repository')}</td>
-<td>${action('website','https://www.impossibleg.org/','Impossible G website')} ${action('github','https://github.com/impossibleG','Impossible G repositories')}</td>
-<td>${action('website','https://dispersalwolves.com/','Dispersal Wolves website')} ${action('github','https://github.com/dispersal-wolves','Dispersal Wolves repositories')}</td>
-</tr>
-</table>
+<p>${selectedWork}</p>
 
 ${picture('divider','',840,1)}
 
