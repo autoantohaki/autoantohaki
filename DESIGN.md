@@ -4,6 +4,8 @@ The README uses native GitHub text, transparent SVG assets and paired light/dark
 
 Run `node scripts/build-profile.mjs` to regenerate the README and assets. Edit its content lists for badges and project copy. Assets are checked in so rendering does not depend on a build server.
 
+Selected work uses three native table columns, with an invisible spacer preserving readable column widths on small screens. GitHub's table scrolls horizontally on narrow devices. Category labels and website buttons use solid inverted fills; other pills remain transparent with stronger outlines. All four badge categories share one wrapping cloud.
+
 ## Existing artwork
 
 - `assets/source/phorminx-illustration.svg` is an unchanged geometry export of the portfolio's `StaticDiagram` Phorminx artwork. The banner scales it and changes foreground color only.

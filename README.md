@@ -1,4 +1,4 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Maurício Antohaki — Less friction. More possibility. Voice-to-text illustration reused from antohaki.tech." width="840"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Maurício Antohaki — Leave room for the next idea. Voice-to-text illustration reused from antohaki.tech." width="840"></picture>
 
 Leader · Architect · Polyglot
 
@@ -10,31 +10,31 @@ I like making complicated things usable. I build local AI tools, software that c
 
 ### 01 / Selected work
 
-<h3><img src="assets/phorminx.svg" width="28" height="28" alt="">&nbsp; Phorminx</h3>
-
-Speak, write, and find the thought again. Local dictation and meeting transcription, powered by your own computer.
-
-<a href="https://phorminx.net"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Phorminx website" height="28"></picture></a> <a href="https://github.com/impossibleG/phorminx"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Phorminx repository" height="28"></picture></a>
-
-<h3><img src="assets/impossible-g.png" width="30" height="30" alt="">&nbsp; Impossible G</h3>
-
-AI infrastructure you can own. Ready-made services for embeddings, documents, speech, and inference.
-
-<a href="https://www.impossibleg.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Impossible G website" height="28"></picture></a> <a href="https://github.com/impossibleG"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Impossible G repositories" height="28"></picture></a>
-
-<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dispersal-wolves-dark.svg"><img src="assets/dispersal-wolves-light.svg" alt="" width="42" height="22"></picture>&nbsp; Dispersal Wolves</h3>
-
-Ten defensive utilities for Linux hosts. Inspect the machine, understand its exposure, and keep the evidence readable.
-
-<a href="https://dispersalwolves.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Dispersal Wolves website" height="28"></picture></a> <a href="https://github.com/dispersal-wolves"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Dispersal Wolves repositories" height="28"></picture></a>
+<table>
+<tr>
+<td width="33%" valign="top"><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><h3><img src="assets/phorminx.svg" width="28" height="28" alt="">&nbsp; Phorminx</h3></td>
+<td width="33%" valign="top"><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><h3><img src="assets/impossible-g.png" width="30" height="30" alt="">&nbsp; Impossible G</h3></td>
+<td width="33%" valign="top"><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dispersal-wolves-dark.svg"><img src="assets/dispersal-wolves-light.svg" alt="" width="42" height="22"></picture>&nbsp; Dispersal Wolves</h3></td>
+</tr>
+<tr>
+<td valign="top">Speak, write, and find the thought again. Local dictation and meeting transcription, powered by your own computer.</td>
+<td valign="top">AI infrastructure you can own. Ready-made services for embeddings, documents, speech, and inference.</td>
+<td valign="top">Ten defensive utilities for Linux hosts. Inspect the machine, understand its exposure, and keep the evidence readable.</td>
+</tr>
+<tr>
+<td><a href="https://phorminx.net"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Phorminx website" height="28"></picture></a> <a href="https://github.com/impossibleG/phorminx"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Phorminx repository" height="28"></picture></a></td>
+<td><a href="https://www.impossibleg.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Impossible G website" height="28"></picture></a> <a href="https://github.com/impossibleG"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Impossible G repositories" height="28"></picture></a></td>
+<td><a href="https://dispersalwolves.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Dispersal Wolves website" height="28"></picture></a> <a href="https://github.com/dispersal-wolves"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Dispersal Wolves repositories" height="28"></picture></a></td>
+</tr>
+</table>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="840" height="1"></picture>
 
 ### 02 / Foundations & tools
 
-**Certifications**
-
+<!-- Existing profile activity figures retained; not recalculated live. The private framework name is intentionally omitted. -->
 <p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/category-0-dark.svg"><img src="assets/category-0-light.svg" alt="Certifications" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-0-dark.svg"><img src="assets/pill-0-light.svg" alt="Lean Six Sigma · Black Belt" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-1-dark.svg"><img src="assets/pill-1-light.svg" alt="ISO 27001 · Lead Implementer" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-2-dark.svg"><img src="assets/pill-2-light.svg" alt="SOC 2" height="28"></picture>
@@ -44,11 +44,7 @@ Ten defensive utilities for Linux hosts. Inspect the machine, understand its exp
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-6-dark.svg"><img src="assets/pill-6-light.svg" alt="IBM · AI &amp; Cybersecurity" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-7-dark.svg"><img src="assets/pill-7-light.svg" alt="Google · Data Analytics" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-8-dark.svg"><img src="assets/pill-8-light.svg" alt="ITIL 4 · Foundation &amp; Specialist" height="28"></picture>
-</p>
-
-**Artificial intelligence**
-
-<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/category-1-dark.svg"><img src="assets/category-1-light.svg" alt="Artificial intelligence" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-9-dark.svg"><img src="assets/pill-9-light.svg" alt="Harness construction" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-10-dark.svg"><img src="assets/pill-10-light.svg" alt="ReAct agents" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-11-dark.svg"><img src="assets/pill-11-light.svg" alt="LLMOps &amp; observability" height="28"></picture>
@@ -57,11 +53,7 @@ Ten defensive utilities for Linux hosts. Inspect the machine, understand its exp
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-14-dark.svg"><img src="assets/pill-14-light.svg" alt="Multi-step reasoning" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-15-dark.svg"><img src="assets/pill-15-light.svg" alt="Prompt engineering" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-16-dark.svg"><img src="assets/pill-16-light.svg" alt="Self-hosted models" height="28"></picture>
-</p>
-
-**Tech**
-
-<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/category-2-dark.svg"><img src="assets/category-2-light.svg" alt="Tech" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-17-dark.svg"><img src="assets/pill-17-light.svg" alt="Rust" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-18-dark.svg"><img src="assets/pill-18-light.svg" alt="Go" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-19-dark.svg"><img src="assets/pill-19-light.svg" alt="TypeScript" height="28"></picture>
@@ -72,14 +64,7 @@ Ten defensive utilities for Linux hosts. Inspect the machine, understand its exp
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-24-dark.svg"><img src="assets/pill-24-light.svg" alt="Azure" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-25-dark.svg"><img src="assets/pill-25-light.svg" alt="AWS" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-26-dark.svg"><img src="assets/pill-26-light.svg" alt="GCP" height="28"></picture>
-</p>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="840" height="1"></picture>
-
-### 03 / Along the way
-
-<!-- Existing profile activity figures retained; not recalculated live. The private framework name is intentionally omitted. -->
-<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/category-3-dark.svg"><img src="assets/category-3-light.svg" alt="Along the way" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-0-dark.svg"><img src="assets/stat-0-light.svg" alt="Framework author" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-1-dark.svg"><img src="assets/stat-1-light.svg" alt="Contributing · 12 years" height="28"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-2-dark.svg"><img src="assets/stat-2-light.svg" alt="Avg. contributions · 863/year" height="28"></picture>

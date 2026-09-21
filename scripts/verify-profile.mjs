@@ -10,6 +10,16 @@ assert.equal((readme.match(/<picture>/g)||[]).length,(readme.match(/<\/picture>/
 assert.equal((readme.match(/<a href=/g)||[]).length,7);
 for(const url of ['https://phorminx.net','https://github.com/impossibleG/phorminx','https://www.impossibleg.org/','https://github.com/impossibleG','https://dispersalwolves.com/','https://github.com/dispersal-wolves','https://antohaki.tech'])assert.ok(readme.includes(`href="${url}"`),url);
 assert.ok(!/Kaiken|tokyo.?night|github-readme-activity-graph/i.test(readme));
+assert.ok(readme.includes('Leave room for the next idea.'));
+const rows = [...readme.matchAll(/<tr>([\s\S]*?)<\/tr>/g)];
+assert.equal(rows.length,3);
+for(const row of rows)assert.equal((row[1].match(/<td\b/g)||[]).length,3);
+for(let i=0;i<4;i++)assert.ok(readme.includes(`assets/category-${i}-dark.svg`));
+for(const description of [
+  'Speak, write, and find the thought again. Local dictation and meeting transcription, powered by your own computer.',
+  'AI infrastructure you can own. Ready-made services for embeddings, documents, speech, and inference.',
+  'Ten defensive utilities for Linux hosts. Inspect the machine, understand its exposure, and keep the evidence readable.',
+])assert.ok(readme.includes(description),'Project descriptions must stay unchanged');
 for(const theme of ['light','dark']) {
   const header=await readFile(resolve(root,`assets/header-${theme}.svg`),'utf8');
   const original=await readFile(resolve(root,'assets/source/phorminx-illustration.svg'),'utf8');
