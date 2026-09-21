@@ -1,71 +1,94 @@
-<div align="center">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Maurício Antohaki — Less friction. More possibility. Voice-to-text illustration reused from antohaki.tech." width="840"></picture>
 
-# Maurício — Leader, Architect, Polyglot, and building what scales
+Leader · Architect · Polyglot
 
----
+I like making complicated things usable. I build local AI tools, software that connects systems, and infrastructure people can run themselves. I lead the work and write the code.
 
-### What I build
+<a href="https://antohaki.tech"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-dark.svg"><img src="assets/portfolio-light.svg" alt="Explore the portfolio" height="28"></picture></a>
 
-I build **AI systems around business problems**, not the other way around. And my background in `process optimization` means I design `lean first`. I understand the constraints, metrics, and ***what `actually` moves the needle***, then I engineer it properly. The result is: production-grade, measurable, actuallyused.
-On the technical side: agents that **reason across multiple steps and perform actions**, LLMOps pipelines with real observability, backend architecture `designed for scale` and `decoupling from day one`.
-I operate across the full lifecycle, from whiteboarding with stakeholders to shipping production code, and **I hold `strong opinions` on where complexity should and shouldn't live.**
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="840" height="1"></picture>
 
-### Certifications
+### 01 / Selected work
 
-![LSS Black Belt](https://img.shields.io/badge/Lean_Six_Sigma-Black_Belt-black?style=flat-square)
-![ISO 27001](https://img.shields.io/badge/ISO%2FIEC_27001%3A2022-Lead_Implementer-blue?style=flat-square)
-![SOC 2](https://img.shields.io/badge/SOC_2-Certified-green?style=flat-square)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-red?style=flat-square)
-![Harvard](https://img.shields.io/badge/Harvard-ML_%26_AI_%7C_CS50-A51C30?style=flat-square)
-![MIT](https://img.shields.io/badge/MIT-Prescriptive_AI-A31F34?style=flat-square)
-![IBM](https://img.shields.io/badge/IBM-AI_%26_Cybersecurity-054ADA?style=flat-square)
-![Google](https://img.shields.io/badge/Google-Advanced_Data_Analytics-4285F4?style=flat-square)
-![ITIL 4](https://img.shields.io/badge/ITIL_4-Foundation_%26_Specialist-purple?style=flat-square)
+<h3><img src="assets/phorminx.svg" width="28" height="28" alt="">&nbsp; Phorminx</h3>
 
-### Artificial Intelligence
+Speak, write, and find the thought again. Local dictation and meeting transcription, powered by your own computer.
 
-![Harness Construction](https://img.shields.io/badge/Harness-Construction-6e40c9?style=flat-square&logoColor=white)
-![ReAct Agents](https://img.shields.io/badge/ReAct-Agents-6e40c9?style=flat-square&logoColor=white)
-![LLMOps](https://img.shields.io/badge/LLMOps-Observability-1C3C3C?style=flat-square&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG-Pipelines-238636?style=flat-square&logoColor=white)
-![LLM as a Judge](https://img.shields.io/badge/LLM--as--a--Judge-Eval_Frameworks-0075ca?style=flat-square&logoColor=white)
-![Multi-step Reasoning](https://img.shields.io/badge/Multi--step-Reasoning-1f6feb?style=flat-square&logoColor=white)
-![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-FF6B6B?style=flat-square&logoColor=white)
-![Self-hosted Models](https://img.shields.io/badge/Self--hosted-Models-000000?style=flat-square&logoColor=white)
+<a href="https://phorminx.net"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Phorminx website" height="28"></picture></a> <a href="https://github.com/impossibleG/phorminx"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Phorminx repository" height="28"></picture></a>
 
-### Tech
+<h3><img src="assets/impossible-g.png" width="30" height="30" alt="">&nbsp; Impossible G</h3>
 
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C%23](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+AI infrastructure you can own. Ready-made services for embeddings, documents, speech, and inference.
 
----
+<a href="https://www.impossibleg.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Impossible G website" height="28"></picture></a> <a href="https://github.com/impossibleG"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Impossible G repositories" height="28"></picture></a>
 
-### Stats
+<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dispersal-wolves-dark.svg"><img src="assets/dispersal-wolves-light.svg" alt="" width="42" height="22"></picture>&nbsp; Dispersal Wolves</h3>
 
- 
+Ten defensive utilities for Linux hosts. Inspect the machine, understand its exposure, and keep the evidence readable.
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=autoantohaki&theme=tokyonight&hide_border=true" />
+<a href="https://dispersalwolves.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" alt="Dispersal Wolves website" height="28"></picture></a> <a href="https://github.com/dispersal-wolves"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg"><img src="assets/github-light.svg" alt="Dispersal Wolves repositories" height="28"></picture></a>
 
-![Framework Author](https://img.shields.io/badge/Framework_Author-Kaiken-6e40c9?style=for-the-badge&logo=githubactions&logoColor=white)
-![Years Contributing](https://img.shields.io/badge/Contributing-12_Years-0075ca?style=for-the-badge&logo=github&logoColor=white)
-![Avg Per Year](https://img.shields.io/badge/Avg_Contributions-863_per_year-238636?style=for-the-badge&logo=git&logoColor=white)
-![Avg Per Day](https://img.shields.io/badge/Avg_Commits-2.36_per_day-1f6feb?style=for-the-badge&logo=gitcommit&logoColor=white)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="840" height="1"></picture>
 
----
+### 02 / Foundations & tools
 
-### Contribution Graph
+**Certifications**
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=autoantohaki&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-0-dark.svg"><img src="assets/pill-0-light.svg" alt="Lean Six Sigma · Black Belt" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-1-dark.svg"><img src="assets/pill-1-light.svg" alt="ISO 27001 · Lead Implementer" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-2-dark.svg"><img src="assets/pill-2-light.svg" alt="SOC 2" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-3-dark.svg"><img src="assets/pill-3-light.svg" alt="MITRE ATT&amp;CK" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-4-dark.svg"><img src="assets/pill-4-light.svg" alt="Harvard · ML &amp; AI / CS50" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-5-dark.svg"><img src="assets/pill-5-light.svg" alt="MIT · Prescriptive AI" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-6-dark.svg"><img src="assets/pill-6-light.svg" alt="IBM · AI &amp; Cybersecurity" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-7-dark.svg"><img src="assets/pill-7-light.svg" alt="Google · Data Analytics" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-8-dark.svg"><img src="assets/pill-8-light.svg" alt="ITIL 4 · Foundation &amp; Specialist" height="28"></picture>
+</p>
 
+**Artificial intelligence**
 
+<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-9-dark.svg"><img src="assets/pill-9-light.svg" alt="Harness construction" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-10-dark.svg"><img src="assets/pill-10-light.svg" alt="ReAct agents" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-11-dark.svg"><img src="assets/pill-11-light.svg" alt="LLMOps &amp; observability" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-12-dark.svg"><img src="assets/pill-12-light.svg" alt="RAG pipelines" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-13-dark.svg"><img src="assets/pill-13-light.svg" alt="LLM-as-a-Judge" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-14-dark.svg"><img src="assets/pill-14-light.svg" alt="Multi-step reasoning" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-15-dark.svg"><img src="assets/pill-15-light.svg" alt="Prompt engineering" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-16-dark.svg"><img src="assets/pill-16-light.svg" alt="Self-hosted models" height="28"></picture>
+</p>
 
+**Tech**
 
-</div>
+<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-17-dark.svg"><img src="assets/pill-17-light.svg" alt="Rust" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-18-dark.svg"><img src="assets/pill-18-light.svg" alt="Go" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-19-dark.svg"><img src="assets/pill-19-light.svg" alt="TypeScript" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-20-dark.svg"><img src="assets/pill-20-light.svg" alt="Python" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-21-dark.svg"><img src="assets/pill-21-light.svg" alt="C#" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-22-dark.svg"><img src="assets/pill-22-light.svg" alt="Java" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-23-dark.svg"><img src="assets/pill-23-light.svg" alt="C++" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-24-dark.svg"><img src="assets/pill-24-light.svg" alt="Azure" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-25-dark.svg"><img src="assets/pill-25-light.svg" alt="AWS" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-26-dark.svg"><img src="assets/pill-26-light.svg" alt="GCP" height="28"></picture>
+</p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="840" height="1"></picture>
+
+### 03 / Along the way
+
+<!-- Existing profile activity figures retained; not recalculated live. The private framework name is intentionally omitted. -->
+<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-0-dark.svg"><img src="assets/stat-0-light.svg" alt="Framework author" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-1-dark.svg"><img src="assets/stat-1-light.svg" alt="Contributing · 12 years" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-2-dark.svg"><img src="assets/stat-2-light.svg" alt="Avg. contributions · 863/year" height="28"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stat-3-dark.svg"><img src="assets/stat-3-light.svg" alt="Avg. commits · 2.36/day" height="28"></picture>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=autoantohaki&amp;hide_border=true&amp;disable_animations=true&amp;background=FFFFFF00&amp;stroke=444444&amp;ring=999999&amp;fire=999999&amp;currStreakNum=EDEDED&amp;sideNums=EDEDED&amp;currStreakLabel=999999&amp;sideLabels=999999&amp;dates=999999">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=autoantohaki&amp;hide_border=true&amp;disable_animations=true&amp;background=FFFFFF00&amp;stroke=D1D9E0&amp;ring=666666&amp;fire=666666&amp;currStreakNum=171717&amp;sideNums=171717&amp;currStreakLabel=666666&amp;sideLabels=666666&amp;dates=666666" width="380" alt="Public GitHub contributions and contribution streaks">
+</picture>
+
+<sub>[Explore the work](https://antohaki.tech) · [Start a conversation](https://antohaki.tech/#contact)</sub>
