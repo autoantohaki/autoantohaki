@@ -16,7 +16,7 @@ const stats = ['Framework author','Contributing · 12 years','Avg. contributions
 const svg = (width,height,body) => `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img">${body}</svg>\n`;
 const picture = (file,alt,width,height) => `<picture><source media="(prefers-color-scheme: dark)" srcset="assets/${file}-dark.svg"><img src="assets/${file}-light.svg" alt="${escape(alt)}"${width?` width="${width}"`:''}${height?` height="${height}"`:''}></picture>`;
 const pill = (label,index,prefix='pill') => picture(`${prefix}-${index}`,label,undefined,28);
-const illustration = await readFile(resolve(assets,'source/phorminx-illustration.svg'),'utf8');
+const illustration = await readFile(resolve(assets,'source/aperture-signed.svg'),'utf8');
 const wolf = await readFile(resolve(assets,'source/dispersal-wolves.svg'),'utf8');
 const phorminx = await readFile(resolve(assets,'phorminx.svg'),'utf8');
 const impossibleG = (await readFile(resolve(assets,'impossible-g.png'))).toString('base64');
@@ -31,7 +31,7 @@ await writeFile(resolve(assets,'empty.svg'),svg(0,0,''));
 for(const [theme,c] of Object.entries(themes)) {
   await writeFile(resolve(assets,`divider-${theme}.svg`),svg(840,1,`<path d="M0 .5H840" stroke="${c.line}"/>`));
   const art = illustration.replace(/<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'').replaceAll('currentColor',c.ink);
-  await writeFile(resolve(assets,`header-${theme}.svg`),svg(840,200,`<title>Maurício — Leave room for the next idea.</title><g font-family="Arial,Helvetica,sans-serif"><rect x="1" y="12" width="36" height="36" fill="${c.ink}"/><text x="8" y="38" fill="${theme==='dark'?'#0d1117':'#ffffff'}" font-size="24">m.</text><text x="52" y="37" fill="${c.ink}" font-size="18">Maurício Antohaki</text><text x="0" y="108" fill="${c.ink}" font-size="43" letter-spacing="-2">Leave room for</text><text x="0" y="155" fill="${c.muted}" font-size="43" letter-spacing="-2">the next idea.</text></g><svg x="408" y="8" width="430" height="182" viewBox="0 0 560 250" fill="none" opacity=".8">${art}</svg>`));
+  await writeFile(resolve(assets,`header-${theme}.svg`),svg(840,200,`<title>Maurício — Leave room for the next idea.</title><g font-family="Arial,Helvetica,sans-serif"><rect x="1" y="12" width="36" height="36" fill="${c.ink}"/><text x="8" y="38" fill="${theme==='dark'?'#0d1117':'#ffffff'}" font-size="24">m.</text><text x="52" y="37" fill="${c.ink}" font-size="18">Maurício Antohaki</text><text x="0" y="108" fill="${c.ink}" font-size="43" letter-spacing="-2">Leave room for</text><text x="0" y="155" fill="${c.muted}" font-size="43" letter-spacing="-2">the next idea.</text></g><svg x="402" y="0" width="438" height="200" viewBox="0 0 560 260">${art}</svg>`));
   await writeFile(resolve(assets,`dispersal-wolves-${theme}.svg`),wolf.replace('fill="currentColor"',`fill="${c.ink}"`));
   for(const project of projects) {
     const mark = project.id==='phorminx'
@@ -69,7 +69,7 @@ const projectPart = (project,kind,layout) => {
 // Narrow screens: each panel is followed immediately by its own two links.
 const selectedWork = ['panel','github','website'].flatMap(kind=>projects.map(p=>projectPart(p,kind,'desktop'))).join('')
   +projects.flatMap(p=>['panel','github','website'].map(kind=>projectPart(p,kind,'mobile'))).join('');
-const readme = `${picture('header','Maurício Antohaki — Leave room for the next idea. Voice-to-text illustration reused from antohaki.tech.',840)}
+const readme = `${picture('header','Maurício Antohaki — Leave room for the next idea. Aperture, signed: architectural wave engraving with an m. in a square opening.',840)}
 
 Leader · Architect · Polyglot
 

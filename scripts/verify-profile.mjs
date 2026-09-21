@@ -30,7 +30,7 @@ for(const theme of ['light','dark']) {
     }
   }
   const header=await readFile(resolve(root,`assets/header-${theme}.svg`),'utf8');
-  const original=await readFile(resolve(root,'assets/source/phorminx-illustration.svg'),'utf8');
+  const original=await readFile(resolve(root,'assets/source/aperture-signed.svg'),'utf8');
   const geometry=s=>[...s.matchAll(/ d="([^"]+)"/g)].map(m=>m[1]);
   assert.deepEqual(geometry(header),geometry(original),'Existing illustration geometry must remain unchanged');
   assert.ok(!/<script|<foreignObject|https?:\/\/(?!www.w3.org)/.test(header));

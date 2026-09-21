@@ -12,6 +12,8 @@ Category labels use solid inverted fills; other pills remain transparent with st
 
 ## Existing artwork
 
+- `assets/source/aperture-signed.svg` is the exact approved "Aperture, signed" vector from the portfolio illustration lab. The banner reuses its wave paths, original square opening, and website m. geometry without redrawing them; only foreground color changes per theme. The old Phorminx source remains archived below but is no longer used in the banner.
+
 - `assets/source/phorminx-illustration.svg` is an unchanged geometry export of the portfolio's `StaticDiagram` Phorminx artwork. The banner scales it and changes foreground color only.
 - Phorminx's official mark comes from https://phorminx.net/brand/phorminx-mark.svg.
 - Impossible G's mark is the existing portfolio asset, also used by https://www.impossibleg.org/.

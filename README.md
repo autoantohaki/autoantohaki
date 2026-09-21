@@ -1,4 +1,4 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Maurício Antohaki — Leave room for the next idea. Voice-to-text illustration reused from antohaki.tech." width="840"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Maurício Antohaki — Leave room for the next idea. Aperture, signed: architectural wave engraving with an m. in a square opening." width="840"></picture>
 
 Leader · Architect · Polyglot
 
